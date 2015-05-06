@@ -11,7 +11,6 @@
 		E7CDA5B51AFACCB200FE892E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5B41AFACCB200FE892E /* ViewController.swift */; };
 		E7CDA5B81AFACCB200FE892E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CDA5B61AFACCB200FE892E /* Main.storyboard */; };
 		E7CDA5BA1AFACCB200FE892E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CDA5B91AFACCB200FE892E /* Images.xcassets */; };
-		E7CDA5BD1AFACCB200FE892E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CDA5BB1AFACCB200FE892E /* LaunchScreen.xib */; };
 		E7CDA5C91AFACCB200FE892E /* codepath_dropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5C81AFACCB200FE892E /* codepath_dropboxTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		E7CDA5B41AFACCB200FE892E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7CDA5B71AFACCB200FE892E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7CDA5B91AFACCB200FE892E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E7CDA5BC1AFACCB200FE892E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E7CDA5C21AFACCB200FE892E /* codepath-dropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codepath-dropboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CDA5C71AFACCB200FE892E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7CDA5C81AFACCB200FE892E /* codepath_dropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_dropboxTests.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				E7CDA5B41AFACCB200FE892E /* ViewController.swift */,
 				E7CDA5B61AFACCB200FE892E /* Main.storyboard */,
 				E7CDA5B91AFACCB200FE892E /* Images.xcassets */,
-				E7CDA5BB1AFACCB200FE892E /* LaunchScreen.xib */,
 				E7CDA5B01AFACCB200FE892E /* Supporting Files */,
 			);
 			path = "codepath-dropbox";
@@ -193,7 +190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CDA5B81AFACCB200FE892E /* Main.storyboard in Resources */,
-				E7CDA5BD1AFACCB200FE892E /* LaunchScreen.xib in Resources */,
 				E7CDA5BA1AFACCB200FE892E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +238,6 @@
 				E7CDA5B71AFACCB200FE892E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E7CDA5BB1AFACCB200FE892E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7CDA5BC1AFACCB200FE892E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "codepath-dropbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "codepath-dropbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
