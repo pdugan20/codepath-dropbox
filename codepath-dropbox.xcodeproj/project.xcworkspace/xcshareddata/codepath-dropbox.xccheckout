@@ -10,24 +10,48 @@
 	<string>codepath-dropbox</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>7D61D77255C2F260985B8F67E420AD69DBF513CE</key>
+		<string>https://github.com/pdugan20/codepath-dropbox.git</string>
 		<key>8C76B9A232B63BAD6790290EA988B3DD5EFFF771</key>
+		<string>https://github.com/pdugan20/codepath-ios.git</string>
+		<key>B3C075A28D3F15B7425D1E16DA9C5D6DED599D8C</key>
 		<string>https://github.com/pdugan20/codepath-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>assignments/01_dropbox/codepath-dropbox/codepath-dropbox.xcodeproj</string>
+	<string>codepath-dropbox.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>7D61D77255C2F260985B8F67E420AD69DBF513CE</key>
+		<string>../..</string>
 		<key>8C76B9A232B63BAD6790290EA988B3DD5EFFF771</key>
-		<string>../../../../..</string>
+		<string>../../../codepath-ios</string>
+		<key>B3C075A28D3F15B7425D1E16DA9C5D6DED599D8C</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/pdugan20/codepath-ios.git</string>
+	<string>https://github.com/pdugan20/codepath-dropbox.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8C76B9A232B63BAD6790290EA988B3DD5EFFF771</string>
+	<string>7D61D77255C2F260985B8F67E420AD69DBF513CE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3C075A28D3F15B7425D1E16DA9C5D6DED599D8C</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D61D77255C2F260985B8F67E420AD69DBF513CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>codepath-dropbox</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
