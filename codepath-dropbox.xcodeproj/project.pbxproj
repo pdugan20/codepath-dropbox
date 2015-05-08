@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74B19301AFC3B13001FFD98 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B192F1AFC3B13001FFD98 /* SettingsViewController.swift */; };
 		E7CDA5B31AFACCB200FE892E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5B21AFACCB200FE892E /* AppDelegate.swift */; };
 		E7CDA5B51AFACCB200FE892E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5B41AFACCB200FE892E /* ViewController.swift */; };
 		E7CDA5B81AFACCB200FE892E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CDA5B61AFACCB200FE892E /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E74B192F1AFC3B13001FFD98 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E7CDA5AD1AFACCB200FE892E /* codepath-dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-dropbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CDA5B11AFACCB200FE892E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7CDA5B21AFACCB200FE892E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E74B19311AFC3B1F001FFD98 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E74B192F1AFC3B13001FFD98 /* SettingsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		E7CDA5A41AFACCB200FE892E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 				E7CDA5B21AFACCB200FE892E /* AppDelegate.swift */,
 				E7CDA5B41AFACCB200FE892E /* ViewController.swift */,
 				E7CDA5B61AFACCB200FE892E /* Main.storyboard */,
+				E74B19311AFC3B1F001FFD98 /* View Controllers */,
 				E7CDA5B91AFACCB200FE892E /* Images.xcassets */,
 				E7CDA5B01AFACCB200FE892E /* Supporting Files */,
 			);
@@ -210,6 +221,7 @@
 			files = (
 				E7CDA5B51AFACCB200FE892E /* ViewController.swift in Sources */,
 				E7CDA5B31AFACCB200FE892E /* AppDelegate.swift in Sources */,
+				E74B19301AFC3B13001FFD98 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +409,7 @@
 				E7CDA5CE1AFACCB200FE892E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7CDA5CF1AFACCB200FE892E /* Build configuration list for PBXNativeTarget "codepath-dropboxTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +418,7 @@
 				E7CDA5D11AFACCB200FE892E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
