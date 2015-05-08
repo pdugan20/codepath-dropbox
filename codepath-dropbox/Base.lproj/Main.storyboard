@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New Account View Controller-->
         <scene sceneID="71O-hY-rzl">
             <objects>
-                <viewController id="6wK-gT-VWq" sceneMemberID="viewController">
+                <viewController id="6wK-gT-VWq" customClass="NewAccountViewController" customModule="codepath_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tw1-VR-ZEi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +24,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="k96-Zg-lJN" kind="modal" animates="NO" id="VoL-Fc-M4X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kzh-eZ-VLX">
+                                <rect key="frame" x="7" y="27" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressWelcomeButton:" destination="6wK-gT-VWq" eventType="touchUpInside" id="HL0-Yy-PoX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,7 +154,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pks-ls-4b9" kind="modal" animates="NO" id="RnV-b0-fzA"/>
+                                    <segue destination="iIE-IP-Fki" kind="modal" animates="NO" id="RnV-b0-fzA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,12 +204,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLu-YZ-6vO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070" y="-112"/>
+            <point key="canvasLocation" x="3602" y="-112"/>
         </scene>
-        <!--View Controller-->
+        <!--Terms Of Service View Controller-->
         <scene sceneID="vmn-LA-LQE">
             <objects>
-                <viewController id="2ge-qO-FKi" sceneMemberID="viewController">
+                <viewController id="2ge-qO-FKi" customClass="TermsOfServiceViewController" customModule="codepath_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPp-2e-FjW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +225,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pks-ls-4b9" kind="modal" animates="NO" id="Mft-VF-AE9"/>
+                                    <action selector="didPressDoneButton:" destination="2ge-qO-FKi" eventType="touchUpInside" id="fA3-gI-YaI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -225,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8Z-mJ-pfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3070" y="664"/>
+            <point key="canvasLocation" x="3602" y="816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MzK-od-vgu">
@@ -535,6 +545,24 @@
             </objects>
             <point key="canvasLocation" x="3726" y="2160"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6TS-0U-eel">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iIE-IP-Fki" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZkC-gJ-ExD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pks-ls-4b9" kind="relationship" relationship="rootViewController" id="YXs-VA-Yze"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C44-nK-WDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070" y="-112"/>
+        </scene>
     </scenes>
     <resources>
         <image name="create1" width="320" height="568"/>
@@ -561,7 +589,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Mft-VF-AE9"/>
-    </inferredMetricsTieBreakers>
 </document>
