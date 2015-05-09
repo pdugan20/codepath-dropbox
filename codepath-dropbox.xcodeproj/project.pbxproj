@@ -12,6 +12,8 @@
 		E74B19351AFD73EA001FFD98 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B19341AFD73EA001FFD98 /* NewAccountViewController.swift */; };
 		E74B19371AFD81EA001FFD98 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B19361AFD81EA001FFD98 /* SignInViewController.swift */; };
 		E74B19391AFD8743001FFD98 /* TroubleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B19381AFD8743001FFD98 /* TroubleViewController.swift */; };
+		E78A9FA71AFDDAFE00567E37 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A9FA61AFDDAFE00567E37 /* PhotoViewController.swift */; };
+		E78A9FA91AFDDC0200567E37 /* LoggedInSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A9FA81AFDDC0200567E37 /* LoggedInSettingsViewController.swift */; };
 		E7CDA5B31AFACCB200FE892E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5B21AFACCB200FE892E /* AppDelegate.swift */; };
 		E7CDA5B51AFACCB200FE892E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CDA5B41AFACCB200FE892E /* ViewController.swift */; };
 		E7CDA5B81AFACCB200FE892E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CDA5B61AFACCB200FE892E /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		E74B19341AFD73EA001FFD98 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		E74B19361AFD81EA001FFD98 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E74B19381AFD8743001FFD98 /* TroubleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroubleViewController.swift; sourceTree = "<group>"; };
+		E78A9FA61AFDDAFE00567E37 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		E78A9FA81AFDDC0200567E37 /* LoggedInSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInSettingsViewController.swift; sourceTree = "<group>"; };
 		E7CDA5AD1AFACCB200FE892E /* codepath-dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-dropbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CDA5B11AFACCB200FE892E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7CDA5B21AFACCB200FE892E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				E74B19381AFD8743001FFD98 /* TroubleViewController.swift */,
+				E78A9FA61AFDDAFE00567E37 /* PhotoViewController.swift */,
 				E74B19321AFD6EF7001FFD98 /* TermsOfServiceViewController.swift */,
 				E74B192F1AFC3B13001FFD98 /* SettingsViewController.swift */,
+				E78A9FA81AFDDC0200567E37 /* LoggedInSettingsViewController.swift */,
 				E74B19341AFD73EA001FFD98 /* NewAccountViewController.swift */,
 				E74B19361AFD81EA001FFD98 /* SignInViewController.swift */,
 			);
@@ -234,8 +240,10 @@
 				E7CDA5B51AFACCB200FE892E /* ViewController.swift in Sources */,
 				E74B19331AFD6EF7001FFD98 /* TermsOfServiceViewController.swift in Sources */,
 				E74B19371AFD81EA001FFD98 /* SignInViewController.swift in Sources */,
+				E78A9FA91AFDDC0200567E37 /* LoggedInSettingsViewController.swift in Sources */,
 				E7CDA5B31AFACCB200FE892E /* AppDelegate.swift in Sources */,
 				E74B19351AFD73EA001FFD98 /* NewAccountViewController.swift in Sources */,
+				E78A9FA71AFDDAFE00567E37 /* PhotoViewController.swift in Sources */,
 				E74B19391AFD8743001FFD98 /* TroubleViewController.swift in Sources */,
 				E74B19301AFC3B13001FFD98 /* SettingsViewController.swift in Sources */,
 			);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AEb-c0-qbf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AEb-c0-qbf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--New Account View Controller-->
@@ -705,7 +705,7 @@
         <!--Photos-->
         <scene sceneID="13X-f1-gYE">
             <objects>
-                <viewController title="Photos" id="dyH-vb-ZrO" sceneMemberID="viewController">
+                <viewController title="Photos" id="dyH-vb-ZrO" customClass="PhotoViewController" customModule="codepath_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4CM-85-3uP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -724,6 +724,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="Ciy-Rc-mw8"/>
+                    <connections>
+                        <outlet property="photoView" destination="SgU-86-zyz" id="eel-SI-KAH"/>
+                        <outlet property="scrollView" destination="q94-7J-Ykn" id="TKT-S3-HY3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHF-nC-b8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -753,29 +757,45 @@
         <!--Settings-->
         <scene sceneID="KND-Oo-CB6">
             <objects>
-                <viewController title="Settings" id="XdX-O4-f2v" sceneMemberID="viewController">
+                <viewController title="Settings" id="XdX-O4-f2v" customClass="LoggedInSettingsViewController" customModule="codepath_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNn-Iw-DM7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ezC-Ww-CQj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="c7s-mg-QMK">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bcT-ci-Yrg">
+                                        <rect key="frame" x="0.0" y="692" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="O9s-85-LPv" kind="modal" modalTransitionStyle="crossDissolve" id="iPl-td-WXN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="2eA-1K-Axf"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="800"/>
+                    <connections>
+                        <outlet property="imageView" destination="c7s-mg-QMK" id="6yY-JM-FvA"/>
+                        <outlet property="scrollView" destination="ezC-Ww-CQj" id="eZg-sw-rBy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCz-Yi-Bm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6650" y="6084"/>
+            <point key="canvasLocation" x="6650" y="6200"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nWJ-Xm-F4N">
@@ -1011,6 +1031,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kKY-uy-bQZ"/>
+        <segue reference="iPl-td-WXN"/>
         <segue reference="24E-uC-7vJ"/>
     </inferredMetricsTieBreakers>
 </document>
