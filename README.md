@@ -1,4 +1,4 @@
-# Codepath Tip Calculator Sample App
+# Codepath Week 1: Dropbox
 
 ### Description:
 This is a fake Dropbox iOS application that simulates account creation, sign-in, a welcome nux-flow, and zero-states for a first-time Dropbox user. The application makes use of push and modal segues.
