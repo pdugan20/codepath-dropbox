@@ -12,11 +12,15 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var welcomeImageView1: UIImageView!
+    @IBOutlet weak var welcomeImageView2: UIImageView!
+    @IBOutlet weak var welcomeImageView3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = CGSize(width: 1600, height: 568)
-        // scrollView.contentSize = imageView.image!.size
+        scrollView.pagingEnabled = true
+        scrollView.contentSize = CGSize(width: 960, height: 568)
         
     }
 

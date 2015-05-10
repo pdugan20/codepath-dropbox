@@ -330,7 +330,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="5zj-t7-Wt6">
-                                <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="iA6-aA-9ws">
@@ -365,6 +365,16 @@
                                             <segue destination="Qtu-Gp-OGG" kind="modal" animates="NO" id="5fC-Jp-hxr"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sr3-g7-bE4">
+                                        <rect key="frame" x="771" y="463" width="61" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="O9s-85-LPv" kind="modal" animates="NO" id="K8I-Id-84u"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -375,6 +385,9 @@
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
                         <outlet property="scrollView" destination="5zj-t7-Wt6" id="vvA-rm-BgF"/>
+                        <outlet property="welcomeImageView1" destination="iA6-aA-9ws" id="5US-8W-ISV"/>
+                        <outlet property="welcomeImageView2" destination="uSQ-Bo-acf" id="lSV-Kb-u3u"/>
+                        <outlet property="welcomeImageView3" destination="XgV-nv-AoY" id="W7L-1S-ema"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -527,7 +540,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="O9s-85-LPv" kind="modal" modalTransitionStyle="crossDissolve" id="ke3-CB-sZs"/>
+                                            <segue destination="qdr-aF-4CN" kind="modal" modalTransitionStyle="crossDissolve" id="ErL-o5-h82"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -765,7 +778,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="O9s-85-LPv" kind="modal" modalTransitionStyle="crossDissolve" id="iPl-td-WXN"/>
+                                            <segue destination="qdr-aF-4CN" kind="modal" modalTransitionStyle="crossDissolve" id="pag-bk-jOS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -806,6 +819,47 @@
             </objects>
             <point key="canvasLocation" x="6374" y="4540"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="WGu-g4-6xu">
+            <objects>
+                <viewController id="gBu-l6-Mei" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ira-xj-hI9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logged_out" id="And-aL-chl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PJ6-Y1-jgJ">
+                                <rect key="frame" x="0.0" y="423" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xal-cB-DMP" kind="push" id="utF-xm-VNp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oEq-vf-24U">
+                                <rect key="frame" x="0.0" y="468" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6wK-gT-VWq" kind="push" id="sWF-N0-396"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ys-Oj-5zF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8Q-UE-lKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="592"/>
+        </scene>
         <!--Trouble View Controller-->
         <scene sceneID="GV9-44-5B4">
             <objects>
@@ -834,7 +888,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXw-f2-Svh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5224" y="5532"/>
+            <point key="canvasLocation" x="5756" y="5532"/>
         </scene>
         <!--Settings-->
         <scene sceneID="VYl-1s-h6o">
@@ -908,7 +962,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKF-JR-661" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5700" y="5532"/>
+            <point key="canvasLocation" x="6232" y="5532"/>
         </scene>
         <!--Photos-->
         <scene sceneID="xFM-J3-Swu">
@@ -927,7 +981,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfW-VH-aRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6168" y="5532"/>
+            <point key="canvasLocation" x="6700" y="5532"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="y3L-rX-9GL">
@@ -946,7 +1000,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ox1-Y3-E2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6656" y="5532"/>
+            <point key="canvasLocation" x="7188" y="5532"/>
         </scene>
         <!--Settings-->
         <scene sceneID="zJv-g9-tTA">
@@ -965,7 +1019,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phs-CX-4xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7182" y="5532"/>
+            <point key="canvasLocation" x="7714" y="5532"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kYf-Ln-Lhs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qdr-aF-4CN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PI2-K6-Q0P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gBu-l6-Mei" kind="relationship" relationship="rootViewController" id="Zc3-9e-S7A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azM-Rf-fve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="592"/>
         </scene>
     </scenes>
     <resources>
@@ -1000,8 +1072,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3C9-Th-J5l"/>
-        <segue reference="68t-7v-kul"/>
-        <segue reference="wtP-hO-irA"/>
+        <segue reference="utF-xm-VNp"/>
+        <segue reference="ErL-o5-h82"/>
+        <segue reference="sWF-N0-396"/>
+        <segue reference="K8I-Id-84u"/>
     </inferredMetricsTieBreakers>
 </document>
